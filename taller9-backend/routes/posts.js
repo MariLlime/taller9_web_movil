@@ -87,3 +87,4 @@ router.put("/:id", verificarToken, (req, res) => {
   posts = posts.map((p) => (p.id === id ? actualizado : p));
   res.json(actualizado);
 });
+module.exports = router;
